@@ -144,7 +144,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_right",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -168,7 +168,6 @@ script = ExtResource("1_g2els")
 sprite_frames = SubResource("SpriteFrames_qhqgy")
 animation = &"walking_right"
 autoplay = "idle_staring_down"
-frame_progress = 0.633219
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_dqkch")

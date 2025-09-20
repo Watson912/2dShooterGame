@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://c7yr3rlknhovq"]
+[gd_scene load_steps=13 format=4 uid="uid://c7yr3rlknhovq"]
 
 [ext_resource type="Texture2D" uid="uid://bj4nqj1cf627y" path="res://assets/Tilesets/Grass.png" id="1_hn12h"]
 [ext_resource type="Texture2D" uid="uid://c1gddfa0hjgjo" path="res://assets/Tilesets/Hills.png" id="2_ihfcg"]
 [ext_resource type="Texture2D" uid="uid://cp6j8ucyoe651" path="res://assets/Sprout Lands color pallet/Sprout Lands defautlt palette snip.PNG" id="3_rka8t"]
 [ext_resource type="PackedScene" uid="uid://c6ojvuqfhglmb" path="res://scenes/player.tscn" id="4_ihfcg"]
+[ext_resource type="Script" uid="uid://cy8mje4nnghbb" path="res://camera_script.gd" id="5_rka8t"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_5hph3"]
 tile_data = PackedInt32Array(0, 589826, 6)
@@ -498,6 +499,10 @@ tile_set = SubResource("TileSet_27bay")
 [node name="Player" parent="." instance=ExtResource("4_ihfcg")]
 position = Vector2(-214, 51)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
+[node name="Camera2D" type="Camera2D" parent="Player" node_paths=PackedStringArray("player")]
 zoom = Vector2(5, 5)
-position_smoothing_speed = 10.0
+position_smoothing_speed = 15.0
+script = ExtResource("5_rka8t")
+player = NodePath("..")
+smoothing_enabled = true
+smoothing_scale = 2
