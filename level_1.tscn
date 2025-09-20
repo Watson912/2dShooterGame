@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c1gddfa0hjgjo" path="res://assets/Tilesets/Hills.png" id="2_ihfcg"]
 [ext_resource type="Texture2D" uid="uid://cp6j8ucyoe651" path="res://assets/Sprout Lands color pallet/Sprout Lands defautlt palette snip.PNG" id="3_rka8t"]
 [ext_resource type="PackedScene" uid="uid://c6ojvuqfhglmb" path="res://scenes/player.tscn" id="4_ihfcg"]
-[ext_resource type="Script" uid="uid://cy8mje4nnghbb" path="res://camera_script.gd" id="5_rka8t"]
+[ext_resource type="Script" uid="uid://cy8mje4nnghbb" path="res://scripts/camera_script.gd" id="5_rka8t"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_5hph3"]
 tile_data = PackedInt32Array(0, 589826, 6)
